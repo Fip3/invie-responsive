@@ -4,6 +4,7 @@ var consulta = window.matchMedia('(max-width: 500px)');
 var $burgerButton = document.getElementById('burger-button');
 var $menu = document.getElementById('menu');
 
+mediaQuery;
 consulta.addListener(mediaQuery);
 
 $burgerButton.addEventListener('touchstart', toggleMenu);

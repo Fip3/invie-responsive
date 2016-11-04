@@ -100,6 +100,7 @@ input:focus, textarea:focus {
 }
 
 .background {
+  background-color: #466173;
   background-image: url('../images/background.png');
   background-size: cover;
 }
@@ -549,4 +550,12 @@ video {
     font-size: 30px;
   }
   /* /guitarras */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .background {
+    background-color: #466173;
+    background-image: url('../images/background@2x.png');
+    background-size: cover;
+  }
 }
