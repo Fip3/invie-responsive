@@ -278,7 +278,7 @@ input:focus, textarea:focus {
 @media screen and (max-width: 800px) {
   /* portada */
   .titulo {
-    font-size: 45px;
+    font-size: 50px;
     margin-top: 30px;
   }
 
@@ -322,6 +322,127 @@ input:focus, textarea:focus {
     position: static;
     margin: 0;
   }
-  /* /guitarras */
 
+  .contenedor-guitarra-a {
+    padding: 0; 
+  }
+  /* /guitarras */
+}
+
+@media screen and (max-width: 767px) {
+  /* footer */
+  .footer .contenedor {
+    display: block;
+  }
+
+  .contacto {
+    margin: 0 auto;
+  }
+
+  .formulario {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .intereses label {
+    display: block;
+    font-size: 16px;
+  }
+
+  .col1 {
+    margin: 0;
+  }
+  input[type="text"],
+  input[type="email"] {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    zoom: 1.5;
+  }
+
+  textarea {
+    width: 100%;
+  }
+  /* /footer */
+}
+
+@media screen and (max-width: 695px) {
+
+  /* portada */
+  .header {
+    text-align: center;    
+  }
+
+  .portada {
+    text-align: center;
+  }
+
+  .logotipo {
+    margin: 0;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+  /* /portada */
+
+  /* menu */
+  .menu {
+    position: static;
+    display: block;
+  }
+
+  .menu li:first-child {
+    margin: 0;
+  }
+
+  .menu ul {
+    padding: 0;
+  }
+  /* /menu */
+}
+
+@media screen and (max-width: 500px) {
+  
+  /* menu */
+  .menu li {
+    display: block;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid white;
+  }
+
+  .menu li:before {
+    display: none;
+  }
+
+  .menu li:first-child {
+    border-top: 1px solid white;
+  }
+  /* /menu */
+
+  /* portada */
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .title-a {
+    font-size: 16px;
+  }
+  /* /portada */
+
+  /* guitarras */
+  .guitarra img {
+    width: 200px;
+  }
+
+  .title-b {
+    font-size: 30px;
+  }
+  /* /guitarras */
 }
