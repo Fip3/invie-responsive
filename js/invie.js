@@ -1,8 +1,7 @@
 var $burgerButton = document.getElementById('burger-button');
 var $menu = document.getElementById('menu');
-$burgerButton.addEventListener('touchstart', slide);
+$burgerButton.addEventListener('touchstart', toggleMenu);
 
-function slide() {
+function toggleMenu() {
   $menu.classList.toggle('active');
-  console.log($menu.className.includes('active'))
 }
