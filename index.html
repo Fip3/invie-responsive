@@ -6,6 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/invie.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-query.css"> -->
   </head>
   <body>
@@ -39,6 +40,10 @@
     </section>
     <section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
       <h2>Nuestras guitarras</h2><!-- titulo -->
+      <div class="video-responsive-contenedor">
+        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/hdJm6Z6z_X8" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <video src="video/320x240.ogg"></video>
       <article class="guitarra"> <!-- guitarra 1 -->
         <img class="derecha" data-src="images/invie-acustica.png" alt="Guitarra Invie Acustica" width="350"/>
         <div class="contenedor-guitarra-a">
@@ -106,9 +111,10 @@
         </form>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+
     <script src="js/invie.js">
       mediaQuery();
     </script>
+
   </body>
 </html>
