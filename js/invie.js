@@ -1,3 +1,5 @@
+//funcionalidad y apariencia burger menu
+
 var consulta = window.matchMedia('(max-width: 500px)');
 var $burgerButton = document.getElementById('burger-button');
 var $menu = document.getElementById('menu');
@@ -18,3 +20,11 @@ function toggleMenu() {
   $menu.classList.toggle('active');
   $burgerButton.classList.toggle('icon-close');
 }
+
+
+
+// carga bLazy
+
+var bLazy = new Blazy({
+  selector: 'img'
+});
