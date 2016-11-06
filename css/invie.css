@@ -326,6 +326,7 @@ input:focus, textarea:focus {
   left: 20px;
   top: 20px;
   z-index: 20;
+  color: white;
 }
 
 .burger-button.hidden {
@@ -405,6 +406,17 @@ video {
     padding: 0; 
   }
   /* /guitarras */
+
+  /* precios */
+  .tabla {
+    margin: 50px 20px;
+  }
+
+  .tabla .contenedor {
+    overflow: auto;
+    border: 1px solid #273b47;
+  }
+  /* /precios */
 }
 
 @media screen and (max-width: 767px) {
@@ -539,6 +551,11 @@ video {
   .portada .contenedor {
     position: static;
   }
+
+  .header, 
+  .header .contenedor {
+    position: static;
+  }
   /* /portada */
 
   /* guitarras */
@@ -549,6 +566,7 @@ video {
   .title-b {
     font-size: 30px;
   }
+
   /* /guitarras */
 }
 

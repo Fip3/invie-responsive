@@ -5,6 +5,8 @@
     <meta charset="utf-8"/>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/invie.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
   </head>
   <body>
     <header id="header" class="header background"> <!-- header -->
@@ -12,7 +14,8 @@
         <figure class="logotipo"> <!-- logotipo -->
           <img src="images/invie.png" width="186" height="60" alt="Invie logotipo"/>
         </figure>
-        <nav class="menu"> <!-- menu -->
+        <span id="burger-button" class="burger-button icon-menu"></span> <!-- menu hamburguesa -->
+        <nav id="menu" class="menu"> <!-- menu -->
           <ul>
             <li>
               <a href="index.html">Home</a>
@@ -35,6 +38,7 @@
               <th>Modelo</th>
               <th>Precio</th>
               <th>Descripción</th>
+              
             </tr>
           </thead>
           <tbody>
@@ -101,5 +105,8 @@
         </form>
       </div>
     </footer>
+
+    <script src="js/invie.js"></script>
+
   </body>
 </html>
