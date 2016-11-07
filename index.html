@@ -128,7 +128,7 @@
       function mediaQuery(){consulta.matches?$burgerButton.classList.remove("hidden"):$burgerButton.classList.add("hidden")}function toggleMenu(){$menu.classList.toggle("active"),$burgerButton.classList.toggle("icon-close")}function showMenu(){consulta.matches&&($menu.classList.add("active"),$burgerButton.className.includes("icon-close")||$burgerButton.classList.toggle("icon-close"))}function hideMenu(){consulta.matches&&($menu.classList.remove("active"),$burgerButton.className.includes("icon-close")&&$burgerButton.classList.toggle("icon-close"))}var consulta=window.matchMedia("(max-width: 500px)"),$burgerButton=document.getElementById("burger-button"),$menu=document.getElementById("menu");mediaQuery(),consulta.addListener(mediaQuery),$burgerButton.addEventListener("touchstart",toggleMenu);var bLazy=new Blazy({selector:"img"}),$body=document.body,gestos=new Hammer($body);gestos.on("swipeleft",function(){hideMenu()}),gestos.on("swiperight",function(){showMenu()}),WebFont.load({google:{families:["Montserrat","Allerta"]}});
     </script>
 
-    <link rel="stylesheet" href="css/invie.css"/>
+    <link rel="stylesheet" href="css/invie.min.css"/>
     
   </body>
 </html>
