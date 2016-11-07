@@ -63,3 +63,14 @@ gestos.on('swipeleft', function(ev) {
 gestos.on('swiperight', function(ev) {
   showMenu();
 });
+
+
+
+// google fonts
+
+WebFont.load({
+    google: {
+      families: ['Montserrat', 'Allerta']
+    }
+  }
+);
