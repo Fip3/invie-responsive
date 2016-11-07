@@ -36,7 +36,7 @@ function hideMenu() {
     $menu.classList.remove('active');
     if ($burgerButton.className.includes('icon-close')){
       $burgerButton.classList.toggle('icon-close')
-  };
+    };
   };
 }
 

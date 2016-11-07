@@ -8,14 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    
-
   </head>
-  <body>
+  <body class="precios">
     <header id="header" class="header background"> <!-- header -->
       <div class="contenedor">
         <figure class="logotipo"> <!-- logotipo -->
-          <img src="images/invie.png" width="186" height="60" alt="Invie logotipo"/>
+          <img data-src="images/invie.png|images/invie@2x.png" width="186" height="60" alt="Invie logotipo"/>
         </figure>
         <span id="burger-button" class="burger-button icon-menu"></span> <!-- menu hamburguesa -->
         <nav id="menu" class="menu"> <!-- menu -->
@@ -93,7 +91,7 @@
                 <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
               </label>
               <label for="comentarios">
-                <input type="checkbox" id="comentarios" name="intereses" value="comantarios"> Comentarios
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
               </label>
               <label for="otros">
                 <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
@@ -102,7 +100,7 @@
           </div>
           <div class="col2">
             <label for="comentarios">Comentarios</label>
-            <textarea name="comantarios" id="comentarios" cols="30" rows="7"></textarea>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
             <input type="submit" value="Enviar" class="button"/>
           </div>
         </form>
@@ -110,6 +108,6 @@
     </footer>
 
     <script src="js/invie.js"></script>
-    
+
   </body>
 </html>
