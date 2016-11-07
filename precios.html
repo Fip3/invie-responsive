@@ -3,11 +3,13 @@
   <head>
     <title>Precios de tus mejores guitarras!!</title>
     <meta charset="utf-8"/>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/invie.css"/>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <style type="text/css">
+      @font-face{font-family:'icomoon';src:url(fonts/icomoon.eot?9f5z8m);src:url(fonts/icomoon.eot?9f5z8m#iefix) format("embedded-opentype"),url(fonts/icomoon.ttf?9f5z8m) format("truetype"),url(fonts/icomoon.woff?9f5z8m) format("woff"),url(fonts/icomoon.svg?9f5z8m#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e9bd"}body{font-family:'Allerta',sans-serif;margin:0}table{width:100%}th{background:#273b47;color:#fff;padding:10px 20px;text-align:left}td{padding:20px}table,td,th{border:1px solid #273b47;border-collapse:collapse}input,textarea{outline:0}.contenedor{width:auto;max-width:800px;margin:auto;position:relative}.background{background-color:#466173;background-image:url(images/background.png);background-size:cover}.menu{font-size:24px;display:inline-block;position:absolute;right:0}.menu li{display:inline-block;margin-left:30px}.menu li:before{content:'∘';font-size:50px;line-height:20px;color:#fff}.menu a{color:#fff;text-decoration:none}.logotipo{display:inline-block;margin-left:0}.header{position:relative}.footer{background:#273b47;padding:50px 10px}.contacto{display:flex;width:300px;flex-wrap:wrap;align-items:center}.contacto img{display:block}.contacto strong{display:block}.contacto a{color:#fff;text-decoration:none;margin:10px 10px 10px 0}.footer .contenedor{display:flex;justify-content:space-between}.formulario{display:flex;width:400px;color:#fff}.col1,.col2{display:flex;flex-direction:column}.col1{margin-right:15px}.col2{align-items:flex-start}.intereses label{font-size:12px}.formulario label,.sexo,.intereses{margin-bottom:10px}.sexo{margin-top:10px}.tabla{margin:50px 0}.burger-button{width:40px;border-radius:50%;line-height:40px;height:40px;background:#395667;display:inline-block;text-align:center;position:fixed;left:10px;top:10px;z-index:20;color:#fff}@media screen and (max-width: 800px){.tabla{margin:50px 20px}.tabla .contenedor{overflow:auto;border:1px solid #273b47}}@media screen and (max-width: 767px){.footer .contenedor{display:block}.contacto{margin:0 auto}.formulario{display:block;margin:0 auto;width:300px}.intereses label{display:block;font-size:16px}.col1{margin:0}input[type="text"],input[type="email"]{font-size:16px;padding:5px}input[type="radio"],input[type="checkbox"]{zoom:1.5}textarea{width:100%}}@media screen and (max-width: 695px){.header{text-align:center}.logotipo{margin:0}.menu{position:static;display:block}.menu li:first-child{margin:0}.menu ul{padding:0}}@media screen and (max-width: 500px){.menu{background:rgba(255,60,88,.9);position:fixed;left:-100%;top:0;z-index:10;bottom:0;right:0;display:flex;align-items:center;width:100%;border:0}.menu li{display:block;margin:0;padding:8px 0;border-bottom:1px solid #fff}.menu ul{flex:1}.menu li:before{display:none}.menu li:first-child{border-top:1px solid #fff}.header,.header .contenedor{position:static}.formulario .col2{align-items:stretch}.precios .header .logotipo{margin:50px 0}}@media screen and (-webkit-min-device-pixel-ratio: 2){.background{background-color:#466173;background-image:url(images/background@2x.png);background-size:cover}}
+    </style>
+
   </head>
   <body class="precios">
     <header id="header" class="header background"> <!-- header -->
@@ -107,7 +109,15 @@
       </div>
     </footer>
 
-    <script src="js/invie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+
+    <script>
+      function mediaQuery(){consulta.matches?$burgerButton.classList.remove("hidden"):$burgerButton.classList.add("hidden")}function toggleMenu(){$menu.classList.toggle("active"),$burgerButton.classList.toggle("icon-close")}function showMenu(){consulta.matches&&($menu.classList.add("active"),$burgerButton.className.includes("icon-close")||$burgerButton.classList.toggle("icon-close"))}function hideMenu(){consulta.matches&&($menu.classList.remove("active"),$burgerButton.className.includes("icon-close")&&$burgerButton.classList.toggle("icon-close"))}var consulta=window.matchMedia("(max-width: 500px)"),$burgerButton=document.getElementById("burger-button"),$menu=document.getElementById("menu");mediaQuery(),consulta.addListener(mediaQuery),$burgerButton.addEventListener("touchstart",toggleMenu);var bLazy=new Blazy({selector:"img"}),$body=document.body,gestos=new Hammer($body);gestos.on("swipeleft",function(){hideMenu()}),gestos.on("swiperight",function(){showMenu()}),WebFont.load({google:{families:["Montserrat","Allerta"]}});
+    </script>
+
+    <link rel="stylesheet" href="css/invie.min.css"/>
 
   </body>
 </html>
